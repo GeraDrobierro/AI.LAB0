@@ -1,0 +1,285 @@
+\documentclass[12pt]{article}
+ \usepackage{amsmath}
+ \usepackage{latexsym}
+ \usepackage{amsfonts}
+ \usepackage[normalem]{ulem}
+ \usepackage{soul}
+ \usepackage{array}
+ \usepackage{amssymb}
+ \usepackage{extarrows}
+ \usepackage{graphicx}
+ \usepackage[backend=biber,
+ style=numeric,
+ sorting=none,
+ isbn=false,
+ doi=false,
+ url=false,
+ ]{biblatex}\addbibresource{bibliography.bib}
+ 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+  \usepackage{subfig}
+ \usepackage{wrapfig}
+ \usepackage{txfonts}
+ \usepackage{wasysym}
+ \usepackage{enumitem}
+ \usepackage{adjustbox}
+ \usepackage{ragged2e}
+ \usepackage[svgnames,table]{xcolor}
+ \usepackage{tikz}
+ \usepackage{longtable}
+ \usepackage{changepage}
+ \usepackage{setspace}
+ \usepackage{hhline}
+ \usepackage{multicol}
+ \usepackage{tabto}
+ \usepackage{float}
+ \usepackage{multirow}
+ \usepackage{makecell}
+ \usepackage{fancyhdr}
+ \usepackage[toc,page]{appendix}
+ \usepackage[hidelinks]{hyperref}
+ \usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+ \tikzset{>={Latex[width=1.5mm,length=2mm]}}
+ \usepackage{flowchart}\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.18in,right=0.39in,top=0.79in,bottom=0.79in,headheight=1in]{geometry}
+ \usepackage[utf8]{inputenc}
+ \usepackage[russian]{babel}
+ \usepackage[T1,T2A]{fontenc}
+ \TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,6.5in,}
+
+  \urlstyle{same}
+
+ 
+   %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+  % 1) Section
+ % 1.1) SubSection
+ % 1.1.1) SubSubSection
+ % 1.1.1.1) Paragraph
+ % 1.1.1.1.1) Subparagraph
+
+ 
+  \setcounter{tocdepth}{5}
+ \setcounter{secnumdepth}{5}
+
+ 
+   %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+ 
+  \setlistdepth{9}
+ \renewlist{enumerate}{enumerate}{9}
+ 		\setlist[enumerate,1]{label=\arabic*)}
+ 		\setlist[enumerate,2]{label=\alph*)}
+ 		\setlist[enumerate,3]{label=(\roman*)}
+ 		\setlist[enumerate,4]{label=(\arabic*)}
+ 		\setlist[enumerate,5]{label=(\Alph*)}
+ 		\setlist[enumerate,6]{label=(\Roman*)}
+ 		\setlist[enumerate,7]{label=\arabic*}
+ 		\setlist[enumerate,8]{label=\alph*}
+ 		\setlist[enumerate,9]{label=\roman*}
+
+  \renewlist{itemize}{itemize}{9}
+ 		\setlist[itemize]{label=$\cdot$}
+ 		\setlist[itemize,1]{label=\textbullet}
+ 		\setlist[itemize,2]{label=$\circ$}
+ 		\setlist[itemize,3]{label=$\ast$}
+ 		\setlist[itemize,4]{label=$\dagger$}
+ 		\setlist[itemize,5]{label=$\triangleright$}
+ 		\setlist[itemize,6]{label=$\bigstar$}
+ 		\setlist[itemize,7]{label=$\blacklozenge$}
+ 		\setlist[itemize,8]{label=$\prime$}
+
+  \pagenumbering{gobble}
+ \setlength{\topsep}{0pt}\setlength{\parskip}{9.96pt}
+ \setlength{\parindent}{0pt}
+
+   %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+ 
+  \renewcommand{\arraystretch}{1.3}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+ 
+  \begin{document}
+ \begin{Center}
+ ИТМО
+ \end{Center}\par
+
+  \begin{Center}
+ Институт математики
+ \end{Center}\par
+ \vspace{\baselineskip}
+ ОТЧЕТ \\
+ ЗАЩИЩЕН С ОЦЕНКОЙ\par
+
+  ПРЕПОДАВАТЕЛЬ\par
+
+ 
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{2.05in}p{0.0in}p{1.76in}p{-0.01in}p{1.89in}}
+ %row no:1
+ \multicolumn{1}{p{2.05in}}{\Centering {проф., д.т.н., проф.}} & 
+ \multicolumn{1}{p{0.0in}}{} & 
+ \multicolumn{1}{p{1.76in}}{} & 
+ \multicolumn{1}{p{-0.01in}}{} & 
+ \multicolumn{1}{p{1.89in}}{\Centering {Прокопов Е.М.}} \\
+ \hhline{-~-~-}
+ %row no:2
+ \multicolumn{1}{p{2.05in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {должность, уч. степень, звание}}} & 
+ \multicolumn{1}{p{0.0in}}{} & 
+ \multicolumn{1}{p{1.76in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+ \multicolumn{1}{p{-0.01in}}{} & 
+ \multicolumn{1}{p{1.89in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+ \hhline{~~~~~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \vspace{\baselineskip}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{6.49in}}
+ %row no:1
+ \multicolumn{1}{p{6.49in}}{\fontsize{14pt}{16.8pt}\selectfont {\section*{\Centering {ОТЧЕТ О ЛАБОРАТОРНОЙ РАБОТЕ №0}}}}\\
+ \hhline{~}
+ %row no:2
+ \multicolumn{1}{p{6.49in}}{\section*{\Centering {РАБОТА С УДАЛЁННЫМИ РЕПОЗИТОРИЯМИ}}
+ } \\
+ \hhline{~}
+ %row no:3
+ \multicolumn{1}{p{6.49in}}{\subsubsection*{\Centering {по курсу: МАШИННОЕ ОБУЧЕНИЕ}}
+ } \\
+ \hhline{~}
+ %row no:4
+ \multicolumn{1}{p{6.49in}}{} \\
+ \hhline{~}
+ %row no:5
+ \multicolumn{1}{p{6.49in}}{} \\
+ \hhline{~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+  РАБОТУ ВЫПОЛНИЛ\par
+
+ 
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{1.3in}p{1.0in}p{-0.04in}p{1.63in}p{-0.04in}p{1.63in}}
+ %row no:1
+ \multicolumn{1}{p{1.3in}}{СТУДЕНТ ГР. №} & 
+ \multicolumn{1}{p{1.0in}}{\Centering {R3335}} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}}{} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}}{\Centering {Д.М. Свердлов}} \\
+ \hhline{~-~-~-}
+ %row no:2
+ \multicolumn{1}{p{1.3in}}{} & 
+ \multicolumn{1}{p{1.0in}}{} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+ \hhline{~~~~~~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \usepackage{verbatim}
+ \begin{Center}
+ Санкт-Петербург \the\year{}
+ \end{Center}\par
+ \newpage
+
+
+\section*{Задание 1}
+При выполнение задания 1, необходимо было сощдать файлы в удалённом репозитории и наполнить его файлами, чтобы позже рабоать с ними в локальном репозитории. Рассмотрим содержимое созданных файлов:
+
+\subsection{Содержимое файла goals.md}
+\begin{algorithm}[H]
+\caption{Содержимое файла goals.md}
+\begin{algorithmic}[1]
+\State \textbf{\# Мой опыт}
+\State На первом курсе, с командой из 3-х человек написали тг-бота.
+\State Личный проект - голосовой помощник на базе MacOS.
+\State Ознакомиться можно: (здесь)[\url{https://github.com/GeraDrobierro}]
+\State В личных интересах работал над созданием полиномиального и матричного калькулятора,
+\State однако его нигде не размещал.
+\State
+\State \textbf{\# Мои цели}
+\State \textbf{1.} Начать изучение теории алгоритмов
+\State \quad + изучить графы
+\State \quad + Изучить асимптотику
+\State \textbf{2.} Подтянуть знания в машинном обучении
+\State \quad + ознакомиться с задачами машинного обучения
+\State
+\State \textbf{Вставка изображения:} ![фото](resources/кот.jpeg)
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Содержимое файла info.md}
+\begin{algorithm}[H]
+\caption{Содержимое файла info.md}
+\begin{algorithmic}[1]
+\State \textbf{ФИО:} Свердлов Давид Михайлович
+\State \textbf{ОС:} macOS
+\State \textbf{Дата:} 2025-09-09 09:21
+\end{algorithmic}
+\end{algorithm}
+\subsection{Содержимое файла .gitignore}
+\begin{algorithm}[H]
+\caption{Содержимое файла .gitignore}
+\begin{algorithmic}[1]
+\State data/
+\end{algorithmic}
+\end{algorithm}
+
+\section*{Задание 2}
+\subsection{Объяснение результата попытки закоммитить файл data/dataset.csv}
+Игнорируемые файлы отслеживаются в специальном файле .gitignore, . В Git  для указания игнорируемых файлов нужно задать .gitignore, чтобы указать в нем новые файлы, которые должны быть проигнорированы. Файлы .gitignore.
+
+
+При выполнении команды \verb|git add data/dataset.csv| не происходит никаких видимых действий -- файл не добавляется в отслеживаемые. Команда \verb|git status|  показывает, что файл \verb|data/dataset.csv| является неотслеживаемым файлом и при этом  любые изменения внутри этого файла игнорируются системой контроля версий\\
+
+Следовательно, последующая команда \verb|git commit| не включает файл \verb|data/dataset.csv| в коммит. В удалённый репозиторий на GitHub отправляется только коммит с файлом \verb|.gitignore|. Сама папка \verb|data| и файл \verb|dataset.csv| остаются только в локальной рабочей копии и не попадают в историю версий.
+
+
+
+
+
+\end{document}
